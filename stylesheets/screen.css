@@ -232,8 +232,11 @@ html,html.no-scroll{
 #greetingName {
     font-size: 50px;
     font-weight: 340;
-    display:inline-block;
     padding-top: 20px;
+    display: block; /* may help stop any text wrapping and display it inline. */
+    display: inline; /* same as above */
+    white-space: nowrap;/* ensure no wrapping */
+    overflow: hidden; /* if for some reason it escapes the visible area don't display anything. */
 }
 
 #greetingName img {
@@ -684,16 +687,12 @@ html,html.no-scroll{
 @keyframes particleAnimation
 {
     from {
-        transform: rotate(20deg);
-        top: -100px;
         left: -100px;
         opacity: 0;
     }
     to {
-        bottom: 10000px;
         left: calc(100% + 100px);
         opacity: 1.0;
-        transform: rotate(20deg);
 
     }
 }
@@ -722,7 +721,7 @@ body{
   right:1px;
   top:0px;
   height:1px;
-  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.5) 100%); 
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,215,0,0.5) 100%); 
 }
 .p-1{
   animation-duration:15s;

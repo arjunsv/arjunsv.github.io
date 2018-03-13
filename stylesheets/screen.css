@@ -150,11 +150,14 @@ html,html.no-scroll{
     margin:0 auto
 }
 .content img {
+    display:inline-block;
     width: 180px;
     height: 180px;
     top:5%;
     left:20%;
-    position: absolute;
+    margin:0 auto;
+    position:relative;
+
 }
 .block-left{
     float:left;
@@ -229,6 +232,12 @@ html,html.no-scroll{
 #greetingName {
     font-size: 50px;
     font-weight: 340;
+    display:inline-block;
+    padding-top: 20px;
+}
+
+#greetingName img {
+    transform: translate(10%, -110%);
 }
 .about-info h1:after,.about-info h2:after,.main-info h1:after,.main-info h2:after{
     content:"";

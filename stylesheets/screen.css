@@ -780,6 +780,7 @@ body{
   top:60%;
 }
 .p-3{
+  animation-delay: 5s;
   animation-duration:20s;
   animation-name:particleAnimation3;
   top:90%;

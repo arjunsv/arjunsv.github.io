@@ -161,7 +161,7 @@ html,html.no-scroll{
 }
 .block-left{
     float:left;
-    background:linear-gradient(rgba(94,135,192,.9),rgba(55,60,100,.9)),url(../img/shinkai.jpg) no-repeat;
+    background:linear-gradient(rgba(94,135,222,.9),rgba(55,60,100,.9)),url(../img/shinkai.jpg) no-repeat;
     background-size:cover,cover
 }
 .block-right{
@@ -215,6 +215,7 @@ html,html.no-scroll{
     position:relative
 }
 .about-info {
+    height: 100%;
 }
 
 .about-info,.main-info{
@@ -684,16 +685,61 @@ html,html.no-scroll{
         transform:rotate(-10deg)
     }
 }
-@keyframes particleAnimation
+@keyframes particleAnimation1
 {
     from {
+        top: -100px;
         left: -100px;
-        opacity: 0;
+        opacity: 0.0;
+        transform: rotate(20deg);
     }
     to {
+        top: 120%;
+        left: calc(100% + 100px);
+        opacity: 0.0;
+        transform: rotate(20deg);
+
+    }
+}
+@keyframes particleAnimation2
+{
+    from {
+        top: 100px;
+        left: -100px;
+        opacity: 0.0;
+        transform: rotate(20deg);
+
+    }
+    to {
+        top: 100%;
+        left: calc(100% + 600px);
+        opacity: 0.0;
+        transform: rotate(20deg);
+
+    }
+}
+@keyframes particleAnimation3
+{
+    0% {
+        top: -100px;
+        left: -100px;
+        opacity: 0.4;
+        transform: rotate(20deg);
+        background-color: rgba(255, 0, 0, 0.8)
+    }
+    15% {
+        top: 70%;
         left: calc(100% + 100px);
         opacity: 1.0;
-
+        transform: rotate(20deg);
+        background-color: rgba(0, 0, 255, 1.0);
+    }
+    100% {
+        top: 70%;
+        left: calc(100% + 100px);
+        opacity: 1.0;
+        transform: rotate(20deg);
+        background-color: rgba(0, 0, 255, 1.0);
     }
 }
 
@@ -709,7 +755,6 @@ body{
   height:1px;
   background-color:white;
   position:fixed;
-  animation-name:particleAnimation;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -721,19 +766,34 @@ body{
   right:1px;
   top:0px;
   height:1px;
-  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,215,0,0.5) 100%); 
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.3) 100%); 
 }
 .p-1{
   animation-duration:15s;
+  animation-name:particleAnimation1;
+  top:0%;
+
 }
 .p-2{
-  animation-duration:10s;
+  animation-duration:7s;
+  animation-name:particleAnimation2;
   top:60%;
 }
 .p-3{
-  animation-duration:12s;
+  animation-duration:20s;
+  animation-name:particleAnimation3;
   top:90%;
 }
+.p-1::before{
+    height: 1px;
+}
+.p-2::before{
+    height: 2px;
+}
+.p-3::before{
+    height: 2px;
+}
+
 
 
 @-webkit-keyframes universe{

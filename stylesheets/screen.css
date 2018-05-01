@@ -396,50 +396,6 @@ html,html.no-scroll{
 }
 
 
-@-webkit-keyframes fly{
-    0%,100%,50%{
-        -webkit-transform:rotate(0)
-    }
-    25%{
-        -webkit-transform:rotate(10deg)
-    }
-    75%{
-        -webkit-transform:rotate(-10deg)
-    }
-}
-@-moz-keyframes fly{
-    0%,100%,50%{
-        -moz-transform:rotate(0)
-    }
-    25%{
-        -moz-transform:rotate(10deg)
-    }
-    75%{
-        -moz-transform:rotate(-10deg)
-    }
-}
-@-o-keyframes fly{
-    0%,100%,50%{
-        -o-transform:rotate(0)
-    }
-    25%{
-        -o-transform:rotate(10deg)
-    }
-    75%{
-        -o-transform:rotate(-10deg)
-    }
-}
-@keyframes fly{
-    0%,100%,50%{
-        transform:rotate(0)
-    }
-    25%{
-        transform:rotate(10deg)
-    }
-    75%{
-        transform:rotate(-10deg)
-    }
-}
 @keyframes particleAnimation1
 {
     from {
@@ -652,4 +608,3 @@ body{
         font-size:40px
     }
 }
- 

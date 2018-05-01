@@ -85,7 +85,7 @@ var screenH;
 var screenW;
 var stars = [];
 var fps = 32;
-var numStars = 300;
+var numStars = 200;
 
 $('document').ready(function() {
   

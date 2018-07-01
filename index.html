@@ -1,116 +1,75 @@
-<!DOCTYPE>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Arjun Vasudevan | Student</title>
-    <meta name="description" content="This is my personal website.">
-    <meta name="author" content="Arjun Vasudevan">
-    <meta name="keywords" content="css, sass, scss, ux, html, design, front-end development, web developer, mixin, code, development, user experience, ui, performance, best practises">
-    <meta property="og:title" content="Arjun Vasudevan | Student">
+<!DOCTYPE html>
+<!-- Winter.io, a minimalist HTML template, designed by Andy Palan (www.andypalan.com)-->
+<html>
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="stylesheets/screen.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body id="homepage">
-    <div class="block-left">
-      <div class="content">
-        <div class="main-info">
-          <h2 id="greetingName">
-            <img src="img/arjun.png" class="img-circle" alt="arjun">
-            Arjun Vasudevan
-          </h2>
-          <br>
-          <a href="index.html" class="logo"></a>
-          <ul id="connectIcons">
-            <li>
-              <a href="https://www.facebook.com/arjun.c.vasudevan" class="btn btn-social-icon btn-facebook">
-                <span class="fa fa-facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/arjunsv" class="btn btn-social-icon btn-github">
-                <span class="fa fa-github"></span>
-              </a> 
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/arjun-vasudevan-7309a411a/" class="btn btn-social-icon btn-linkedin">
-                <span class="fa fa-linkedin"></span>
-              </a>  
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="p p-1"></div>
-      <div class="p p-2"></div>
-      <div class="p p-3"></div>
-      <canvas id="space"></canvas>
+    <title>Arjun Vasudevan</title>
+    <meta name="description" content="Arjun Vasudevan"/>
+    <meta name="keywords" content=""/>
 
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/63e7afe910.js"></script>
+</head>
+
+<body>
+    <div id="moon">
+        <img src="images/ribbon.png" class="ribbon"/>
     </div>
 
-    <div class="block-right">
-      <div class="content" id="content1">
-        <br>
-        <div class="about-info">
-          <h1>About Me</h1>
-          <p>
-            • Computer Science student at <a href="https://www.berkeley.edu/" class="purple">UC Berkeley</a>
-          </p>
-          <p>
-            • President at <a href="https://mtab.berkeley.edu/" class="purple">Medical Technology at Berkeley</a>
-          </p>
-          <p>
-            • Software Engineering Intern at <a href="http://www.fujitsu.com/global/" class="purple">Fujitsu</a>
-          </p>
-          <h1>Projects</h1>
-          <br>
-          <p>
-            • Image processing and analysis to support early Alzheimer's detection in parternship with <a href="https://www.darmiyan.com/" class="purple"> Darmiyan</a>
-          </p>
-          <p>
-            • South Asian Emergency Medicine Training platform in partnership with <a href="https://emed.stanford.edu/" class="purple">Stanford University School of Medicine</a>
-          </p>
-          <h1>Interests</h1>
-          <br>
-          <p>
-            • <a href="https://www.youtube.com/watch?v=KksaVGUCstg" class="purple">Jazz Drumming</a>
-          </p>
-          <p>
-            • Programming Instructor at <a href="https://www.thecoderschool.com/berkeley/" class="purple">The Coder School</a>
-          </p>
+
+    <header class="container">
+        <h1 align="center">Arjun Vasudevan</h1>
+    </header>
+
+    <section class="container">
+        <div class="desktop">
+            <nav class="col-md-12">
+                <h2><a href="index.html">about</a></h2>
+                <h2><a href="projects.html">projects</a></h2>
+                <h2><a href="generic2.html">teaching</a></h2>
+                <h2><a href="generic.html">music</a></h2>
+            </nav>
         </div>
-      </div>
-      <div class="content" id="content2">
-        <br>
-        <div class="about-info">
-          <h1>Miscellaneous</h1>
-          <p><i> Small, fun projects I built to educate myself and others.</i></p>
-          <p>
-            • <a href="https://github.com/arjunsv/cell-automata" class="purple">Cellular Automata: John Conway's Game of Life</a>
-          </p>
-          <p>
-            • <a href="https://github.com/arjunsv/osrs-market-analytics" class="purple">Machine Learning Analysis of Virtual Economies</a>
-          </p>
-          <p>
-            • <a href="https://github.com/arjunsv/berkeley-sentry" class="purple">Berkeley Real Time Crime Visualization</a>
-          </p>
+        <div class="mobile">
+            <nav class="dropdown" align="center">
+                <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">about &emsp; &emsp;  <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html" id="currentlink">about</a></li>
+                    <li><a class="dropdown-item" href="generic.html">projects</a></li>
+                    <li><a class="dropdown-item" href="generic2.html">teaching</a></li>
+                    <li><a class="dropdown-item" href="index.html">music</a></li>
 
-          <h1>Contact</h1>
-          <br>
-          <p>
-            Feel free to contact me at <a href="mailto:arjunsv@berkeley.edu" class="purple">arjunsv@berkeley.edu</a> for any questions, inquiries, or just to chat.
-          </p>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </section>
 
-      
+    <section class="content-container container">
+        <div class="row">
+            <figure class="col-md-6">
+                <img src="assets/images/arjun-pic.png" class="img-responsive center-block"/>
+            </figure>
+            <ul class="col-md-6" id="intro-text">
+                <li>Welcome to my personal website! I am a third year Computer Science major at <a class="removeLinkDefault" href="eecs.berkeley.edu"><b>UC Berkeley</b></a>.</li>
+                <br>
+                <li>As president of <a href="mtab.berkeley.edu"><b class="removeLinksDeafa">Medical Technology at Berkeley</b></a>, I actively integrate technology with medicine, healthcare, and biology to advance modern medicine.</b></li>
+                <br>
+                <li>
+                    Feel free to reachout 
+                </li>
+                <br>
+            </ul>
+        </div>
+    </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script async src="js/canvas.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>

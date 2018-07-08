@@ -1,22 +1,48 @@
-body {
+/*body {
     font-family: "Computer Modern";
+}*/
+
+.dark {
+    background-color: #292B35;
+    color: #FFFFFF;
 }
 
 
 header {
     margin: 1em 0;
-    font-family: "Computer Modern";
-
 }
 
-h2 a{
+/*h2 a{
     font-family: "Computer Modern";
+}*/
+
+@font-face {
+  font-family: "San Francisco";
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+h3 {
+    font-weight: normal;
 }
 
 header h1    {
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
     font-size: 4em;
     padding-bottom: 0.2em;
+    color: #444451;
+}
+
+.nav-active {
+    color: #3372D5;
+}
+
+
+#switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .removeLinkDefault {
@@ -28,8 +54,8 @@ header h1    {
     position: relative;
 }
 .img-fluid {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 #moon img {
     position: absolute;
@@ -53,8 +79,11 @@ header h1    {
 
 
 ul {
-    padding-left: 2em;
+    transform: translateX(10%);
+    max-width: 300%;
+    padding-left: 3em;
     padding-right: 2em;
+    display: inline-block;
 }
 
 a b {
@@ -64,13 +93,16 @@ a b {
 p {
 }
 
-h2 {
+h2, h3{
     padding-left: 1.5em;
+    color: #444451;
 }
 
 li {
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 2.3rem;
+    line-height: 1.5; /* 4px +12px + 4px */
+    color: #444450;
 }
 
 .mobile {
@@ -96,7 +128,7 @@ section nav p {
 }
 
 a:link {
-    color: #4B88BE;
+    color: #277EF6;
 }
 
 a:visited {
@@ -104,14 +136,14 @@ a:visited {
 }
 
 a:hover {
-    color: #4B88BE;
-    border-bottom: 1px solid #4B88BE;
+    color: #277EF6;
+    border-bottom: 1px solid #277EF6;
     text-decoration: none;
 }
 
 a:active {
-    color: #4B88BE;
-    border-bottom: 1px solid #4B88BE;
+    color: #277EF6;
+    border-bottom: 1px solid #277EF6;
 }
 
 section nav a:link {
@@ -157,7 +189,7 @@ a, u {
 
 .container {
     padding-top: 2em;
-    width: 66%;
+    width: 76%;
 }
 
 @media (max-width: 767px) {
@@ -182,7 +214,7 @@ a, u {
 }
 
 .card {
- box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+ box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
 
 .card:hover {
@@ -201,12 +233,17 @@ a, u {
 }
 
 #teaching_date {
-    padding-left: 3em;
+    padding-left: 1em;
+    transform: translateX(8rem);
     font-weight: bold;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
 }
 
 #teaching_desc {
     padding-left: 3em;
+    padding-bottom: 1.2em;
 }
 
 #proj_title {
@@ -238,6 +275,104 @@ a, u {
 }
 
 #emoji {
-    transform: translateX(8px);
-    transform: translateY(-2px);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+#emoji:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: -2px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  top: 3px;
+  right: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* projects */
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.row {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.container-fluid {
+    max-width: 90%;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.teaching-preface {
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+
+}
+
+.teaching-container {
+    padding-top: 0.5rem;
+    max-width: 100%;
 }

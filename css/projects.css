@@ -14,3 +14,7 @@
 .container-fluid {
 	max-width: 85%;
 }
+
+h3 {
+	font-weight: normal;
+}

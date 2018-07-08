@@ -15,21 +15,31 @@
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   </head>
 
   <body>
+    <div id="switch">
+        <i class="em em-full_moon"></i>
+        <label id="toggle" class="switch">
+          <input id="toggle-switch" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <i class="em em-sunny"></i>
+    </div>
     <header class="container">
-        <h1 align="center">Arjun Vasudevan</h1>
+        <h1 id="name-title" align="center">Arjun Vasudevan</h1>
     </header>
 
     <section class="container">
         <div class="desktop">
             <nav class="col-md-12">
-                <h3><a href="index.html">about</a></h3>
-                <h3><a href="projects.html">projects</a></h3>
-                <h3><a href="generic2.html">teaching</a></h3>
-                <h3><a href="generic.html">music</a></h3>
+                <h3><a class="nav-element" href="index.html">about</a></h3>
+                <h3><a class="nav-element" href="projects.html">projects</a></h3>
+                <h3><a class="nav-element" href="generic2.html">teaching</a></h3>
+                <h3><a class="nav-element" href="generic.html">music</a></h3>
             </nav>
         </div>
         <div class="mobile">
@@ -117,7 +127,7 @@
               <h4 class="card-title">
                 <a href="#" class="removeLinkDefault"><div>Alzheimer's Prediction Platform</div></a>
               </h4>
-              <p class="card-text">Alzheimer's prediction platform developed in partnership with Darmiyan. Successfully completed the alpha of the project in support of $3 million dollar funding round.</p>
+              <p class="card-text">Alzheimer's prediction platform developed in partnership with Darmiyan during Spring of 2018. Successfully completed the alpha of the project in support of $3 million dollar funding round.</p>
               <span class="label label-primary">React</span>
               <span class="label label-success">django</span>
               <span class="label label-warning">MATLAB</span>
@@ -206,7 +216,67 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <script src="https://use.fontawesome.com/63e7afe910.js"></script>
+    <script>
+    const body = document.querySelector('body');
+    const cardElements = document.getElementsByClassName('card');
+    const cardBodyElements = document.getElementsByClassName('card-body');
+    const toggleSwitch = document.getElementById('toggle');
+    const input = document.getElementById('toggle-switch');
+    const name = document.getElementById("name-title");
+    const navElements = document.getElementsByClassName("nav-element");
+    const h3aElements = document.getElementsByTagName("a");
+    const liElements = document.getElementsByTagName("li");
 
+    toggleSwitch.addEventListener('click', function() {
+        const isChecked = input.checked;
+        console.log(isChecked)
+        if (isChecked) {
+          body.classList.remove('dark');
+          name.style.color = "#444450"
+
+          for(var i = 0; i < h3aElements.length; i++) {
+                h3aElements[i].style.color = "#3980EE";
+          }
+
+          for(var i = 0; i < navElements.length; i++) {
+                navElements[i].style.color = "#44444F";
+          }
+
+          for(var i = 0; i < cardBodyElements.length; i++) {
+                cardBodyElements[i].style.backgroundColor = "#FFFFFF";
+          }
+
+          for(var i = 0; i < cardElements.length; i++) {
+                cardElements[i].style.backgroundColor = "#FFFFFF";
+          }
+
+        } else {
+          body.classList.add('dark');
+          name.style.color = "#EBEBEB"
+
+          for(var i = 0; i < h3aElements.length; i++) {
+                h3aElements[i].style.color = "#A6E2E9";
+          }
+
+          for(var i = 0; i < liElements.length; i++) {
+                liElements[i].style.color = "#EBEBEB";
+          }
+
+          for(var i = 0; i < navElements.length; i++) {
+                navElements[i].style.color = "#EBEBEB   ";
+          }
+
+          for(var i = 0; i < cardBodyElements.length; i++) {
+                cardBodyElements[i].style.backgroundColor = "#555764";
+          }
+
+          for(var i = 0; i < cardElements.length; i++) {
+                cardElements[i].style.backgroundColor = "#2A2C34";
+          }
+        }
+    });
+    </script>
+    </script>
 
   </body>
 

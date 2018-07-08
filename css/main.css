@@ -7,6 +7,18 @@
     color: #FFFFFF;
 }
 
+.dark-white-text {
+    color: #EBEBEB;
+}
+
+.dark-blue-text {
+    color: #A6E2E9;
+}
+
+.dark-green-text {
+    color: #90F8A2;
+}
+
 
 header {
     margin: 1em 0;
@@ -38,11 +50,15 @@ header h1    {
     color: #3372D5;
 }
 
+.col-md-12 {
+    padding-left: 30px;
+}
+
 
 #switch {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 32px;
+    right: 32px;
 }
 
 .removeLinkDefault {
@@ -50,18 +66,6 @@ header h1    {
     text-decoration: none;
 }
 
-#moon {
-    position: relative;
-}
-.img-fluid {
-    width: 300px;
-    height: 300px;
-}
-#moon img {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
 
 #brain-img {
     width: 500px;
@@ -214,7 +218,7 @@ a, u {
 }
 
 .card {
- box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+ box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
 }
 
 .card:hover {
@@ -342,6 +346,15 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.em-full_moon {
+    transform: translate(-0.5em, -1em);
+}
+
+.em-sunny {
+    transform: translate(0.5em, -1em);
+
+}
+
 
 /* projects */
 
@@ -375,4 +388,8 @@ h3 {
 .teaching-container {
     padding-top: 0.5rem;
     max-width: 100%;
+}
+
+::selection {
+    background: #ffdc00;
 }

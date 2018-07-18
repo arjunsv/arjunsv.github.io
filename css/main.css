@@ -50,6 +50,12 @@ header h1    {
     color: #3372D5;
 }
 
+#main-row {
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
 .col-md-12 {
     padding-left: 35px;
 }
@@ -66,10 +72,24 @@ header h1    {
     text-decoration: none;
 }
 
+#brown-hand {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  -webkit-animation:handwave 1s linear;
+  -moz-animation:handwave 1s linear;
+  animation:handwave 1s linear;
+}
+
 #arjun-img {
     width:450px; /* you can use % */
     height: auto;
-    transform: translateX(30px);
+}
+
+#intro-text {
+    font-size: 1em;
+    margin-left: 0px;
 }
 
 
@@ -131,6 +151,10 @@ section nav p {
     text-align: center;
     margin-left: 1.5em;
     margin-right: 1.5em;
+}
+
+.center-block {
+  margin-right: 30px;
 }
 
 #currentlink {
@@ -211,6 +235,9 @@ a, u {
         padding-top: 2em;
         width: 100%;
     }
+    .nav-mobile {
+      position: relative;
+    }
 }
 
 #caption {
@@ -218,10 +245,6 @@ a, u {
     text-align: center;
     margin-bottom: 2em;
 }    
-
-#intro-text {
-    font-size: 1em;
-}
 
 .col-lg-6 {
   padding-right: 40px;
@@ -406,15 +429,10 @@ h3 {
     padding-left: 0.5rem;
 }
 
-#brown-hand {
-    width: 40px;
-    height: 40px;
-    animation: handwave 1s ease-in-out;
-}
 
-#brown-hand:hover {
+/*#brown-hand:hover {
     animation: handwave2 1s ease-in-out;
-}
+}*/
 
 @keyframes rotation {
   50% {
@@ -452,7 +470,7 @@ h3 {
     }
     to {
         -webkit-transform: none;
-        transform: none
+        transform: none;
     }
 }
 

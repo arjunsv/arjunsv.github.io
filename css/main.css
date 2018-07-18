@@ -51,7 +51,7 @@ header h1    {
 }
 
 .col-md-12 {
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 
@@ -69,6 +69,7 @@ header h1    {
 #arjun-img {
     width:450px; /* you can use % */
     height: auto;
+    transform: translateX(30px);
 }
 
 

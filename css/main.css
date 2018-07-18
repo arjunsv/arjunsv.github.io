@@ -64,7 +64,7 @@ header h1    {
 #switch {
     position: absolute;
     top: 32px;
-    right: 32px;
+    right: 38px;
 }
 
 .removeLinkDefault {
@@ -336,7 +336,7 @@ a, u {
   left: 0;
   right: -2px;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #ACE2E9;
   -webkit-transition: .4s;
   transition: .4s;
 }

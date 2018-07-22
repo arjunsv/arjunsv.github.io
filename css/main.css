@@ -267,7 +267,7 @@ a, u {
 }
 
 .card {
-  border-color: #B9B9B9;
+  border-color: #E5E5E5;
 }
 
 .card:hover {
@@ -409,11 +409,17 @@ input:checked + .slider:before {
 
 .portfolio-item {
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .row {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row:before, .row:after {
+  display: inline-block;
 }
 
 .pagination {
@@ -421,7 +427,7 @@ input:checked + .slider:before {
 }
 
 .container-fluid {
-    max-width: 90%;
+    max-width: 85%;
 }
 
 h3 {

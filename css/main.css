@@ -2,6 +2,10 @@
     font-family: "Computer Modern";
 }*/
 
+body {
+  padding-bottom: 50px;
+}
+
 .dark {
     background-color: #292B35;
     color: #FFFFFF;
@@ -77,6 +81,14 @@ header h1    {
   margin-left: 10px;
   width: 35px;
   height: 35px;
+}
+
+.drum-icon {
+  transform: translate(-8px, -6px);
+  margin-bottom: 15 px;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px; 
 }
 
 .animate-wave {
@@ -270,9 +282,12 @@ a, u {
     color: black;
 }
 
+.teaching-container {
+  transform: translateX(12rem);
+}
+
 #teaching_date {
     padding-left: 1em;
-    transform: translateX(8rem);
     font-weight: bold;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */

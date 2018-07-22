@@ -1,7 +1,3 @@
-/*body {
-    font-family: "Computer Modern";
-}*/
-
 body {
   padding-bottom: 100px;
 }
@@ -136,6 +132,7 @@ a b {
 }
 
 p {
+  font-size: 1.6rem;
 }
 
 h2, h3{

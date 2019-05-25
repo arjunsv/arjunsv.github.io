@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Winter.io, a minimalist HTML template, designed by Andy Palan (www.andypalan.com)-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Arjun Vasudevan</title>
+    <meta name="description" content="Winter.io - A Minimalistic HTML Template"/>
+    <meta name="keywords" content=""/>
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400|Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/63e7afe910.js"></script>
+</head>
+
+<body>
+<!--     <div id="switch">
+        <i class="em em-full_moon"></i>
+        <label id="toggle" class="switch">
+          <input id="toggle-switch" type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+        <i class="em em-sunny"></i>
+    </div> -->
+    <header class="container">
+        <h1 id="name-title" align="center">Arjun Vasudevan</h1>
+    </header>
+
+    <section class="container">
+        <div class="desktop">
+            <nav class="col-md-12">
+                <h3><a class="nav-element" href="index.html">&nbsp about &nbsp</a></h3>
+                <h3><a class="nav-element" href="projects.html">&nbsp projects &nbsp</a></h3>
+                <h3><a class="nav-element highlighted-yellow" href="music.html">&nbsp music &nbsp</a></h3>
+            </nav>
+        </div>
+        <div class="mobile">
+            <nav class="dropdown" align="center">
+                <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">about &emsp; &emsp;  <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="index.html">about</a></li>
+                    <li><a class="dropdown-item" href="generic.html" id="currentlink">research</a></li>
+                    <li><a class="dropdown-item" href="generic2.html">teaching</a></li>
+                    <li><a class="dropdown-item" href="index.html">projects</a></li>
+                    <li><a class="dropdown-item" href="index.html">writing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="container music-container"> 
+    <h3 class="video-description nav-element">
+    Drum Solo 4/29/18 - <b>Herzog</b> - Berkeley, CA </li>
+    </h3>
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YAvrbyJeDFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
+    <br>
+    <br>
+    <h3 class="video-description nav-element">
+     Acoustic Fingerstyle 3/12/19 - <b>Every Time We Touch</b> - Berkeley, CA </h3> 
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qcz7o38mf00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+
+    <h3 class="video-description nav-element">
+     Drum Solo 5/23/16 - <b>Cruisin' For a Bluesin'</b> - Palo Alto, CA </h3> 
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ENjfpMX5BhE?start=1048" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    </section>
+    <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+    <script>
+    const body = document.querySelector('body');
+    const toggleSwitch = document.getElementById('toggle');
+    const input = document.getElementById('toggle-switch');
+    const name = document.getElementById("name-title");
+    const navElements = document.getElementsByClassName("nav-element");
+    const h3aElements = document.getElementsByTagName("a");
+    const liElements = document.getElementsByTagName("li");
+
+    toggleSwitch.addEventListener('click', function() {
+        const isChecked = input.checked;
+        console.log(isChecked)
+        if (isChecked) {
+          body.classList.remove('dark');
+          name.style.color = "#444450"
+
+          for(var i = 0; i < h3aElements.length; i++) {
+                h3aElements[i].style.color = "#3980EE";
+          }
+
+          for(var i = 0; i < navElements.length; i++) {
+                navElements[i].style.color = "#44444F";
+          }
+
+        } else {
+          body.classList.add('dark');
+          name.style.color = "#EBEBEB"
+
+          for(var i = 0; i < h3aElements.length; i++) {
+                h3aElements[i].style.color = "#A6E2E9";
+          }
+
+          for(var i = 0; i < navElements.length; i++) {
+                navElements[i].style.color = "#EBEBEB   ";
+          }
+        }
+    });
+    </script> 
+    </body>
+</html>

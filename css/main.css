@@ -68,13 +68,13 @@ header h1    {
 
 #arjun-img {
     width:420px; /* you can use % */
-    margin-right: 7rem;
+    margin-right: 5rem;
     height: auto;
+    margin-bottom: 5rem;
   }
 
 #intro-text {
     font-size: 1em;
-    margin-left: 0px;
 }
 
 
@@ -220,7 +220,7 @@ a, u {
     width: 76%;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .desktop {display: none;}
     .mobile {
         display: flex;
@@ -232,7 +232,7 @@ a, u {
     .nav-mobile {
       position: relative;
     }
-}
+}*/
 
 #caption {
     font-size: 0.9em;

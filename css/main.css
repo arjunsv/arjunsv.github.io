@@ -68,7 +68,7 @@ header h1    {
 
 #arjun-img {
     width:420px; /* you can use % */
-    margin-right: 5rem;
+    margin-right: 7rem;
     height: auto;
   }
 
@@ -145,6 +145,10 @@ section nav p {
 
 .content-container {
   margin-top: -3rem;
+}
+
+.col-lg-6 {
+  margin-bottom: 2rem;
 }
 
 #currentlink {
